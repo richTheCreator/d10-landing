@@ -184,7 +184,7 @@ figure {
     #fh5co-logo {
         font-family: 'Lato';
         font-weight: 300;
-        font-size: 2em;
+        font-size: 3.3em;
         letter-spacing: 10px;
         text-align: center;
     }
@@ -235,11 +235,14 @@ figure {
 }*/
 
 #main {
-    margin-top: 14em;
+    margin-top: 7em;
     clear: both;
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
     #main {
         margin-top: 8em;
     }
@@ -247,61 +250,6 @@ figure {
 
 .fh5co-heading {
     margin-bottom: 3em;
-}
-
-.fh5co-testimonial {
-    padding: 7em 0;
-    background: #f2f2f2;
-}
-
-.fh5co-testimonial .review i {
-    color: #d9d9d9;
-}
-
-.fh5co-testimonial .review i.colored {
-    color: #FFC12D;
-}
-
-.fh5co-testimonial .testimony-slide {
-    text-align: center;
-}
-
-.fh5co-testimonial .testimony-slide span {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    display: block;
-}
-
-.fh5co-testimonial .testimony-slide figure {
-    margin-bottom: 10px;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-}
-
-.fh5co-testimonial .testimony-slide figure img {
-    width: 90px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.fh5co-testimonial .testimony-slide blockquote {
-    border: none;
-    margin: 30px auto;
-    width: 70%;
-    position: relative;
-    padding: 0;
-}
-
-@media screen and (max-width: 992px) {
-    .fh5co-testimonial .testimony-slide blockquote {
-        width: 100%;
-    }
 }
 
 .get-started .form-control {
@@ -459,17 +407,16 @@ figure {
 
 #get-started {
     padding: 7em 0;
-    background: #00E0FF;
+    background: #eeeeee;
 }
 
 #get-started .fh5co-heading h2 {
     margin-bottom: 20px;
+    color: #FF9702;
 }
 
 #get-started .fh5co-heading p {
-    color: #008699;
-    font-size: 18px;
-    line-height: 1.8;
+    color: black;
 }
 
 #get-started .btn {
@@ -564,25 +511,6 @@ figure {
 
 #features .feature-center p {
     color: #a6a6a6;
-}
-
-.owl-carousel .owl-controls .owl-dot span {
-    background: #e6e6e6;
-}
-
-.owl-carousel .owl-controls .owl-dot span:hover,
-.owl-carousel .owl-controls .owl-dot span:focus {
-    background: #cccccc;
-}
-
-.owl-carousel .owl-controls .owl-dot:hover span,
-.owl-carousel .owl-controls .owl-dot:focus span {
-    background: #cccccc;
-}
-
-.owl-carousel .owl-controls .owl-dot.active span {
-    background: transparent;
-    border: 2px solid #118DF0;
 }
 
 .btn {
@@ -809,10 +737,16 @@ figure {
 
 .js .animate-box {
     opacity: 0;
+    margin-bottom: 75px;
 }
 
 .D10-bold {
     font-weight: 500;
+}
+.D10-divider {
+    width: 50px;
+    border-width: 2px;
+    border-color: #FF9702;
 }
 
 .circ-icon {
