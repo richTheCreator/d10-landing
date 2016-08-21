@@ -70,6 +70,10 @@ figure {
     width: 15em;
 }
 
+.btn-primary {
+    background-image: linear-gradient(90deg, #11BCF0 0%, #118DF0 97%)!important;
+}
+
 ::-webkit-selection {
     color: #fff;
     background: #118DF0;
@@ -144,8 +148,9 @@ figure {
     margin-bottom: 3em;
 }
 
-.CTA {
+.CTA a {
     text-align: center;
+    letter-spacing: .15em;
 }
 
 #fh5co-quote {
@@ -217,9 +222,9 @@ figure {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 399px) {
     #fh5co-logo {
-        font-size: 2.5em;
+        font-size: 3.5em;
         letter-spacing: 5px;
     }
     p {
@@ -267,7 +272,7 @@ figure {
 .get-started .btn {
     height: 54px;
     border: none !important;
-    background: #118DF0;
+    background-image: linear-gradient(90deg, #11BCF0 0%, #118DF0 97%)!important;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
@@ -399,6 +404,7 @@ figure {
 
 #get-started .btn {
     background: #118DF0;
+    letter-spacing: .15em;
 }
 
 #get-started .btn:hover,
