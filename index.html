@@ -36,9 +36,12 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900" rel="stylesheet">
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- MailChimp Integration -->
+    <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -54,12 +57,13 @@
                 <div class="intro">
                     <figure class="fh5co-figure animate-box">
                         <h1 id="fh5co-logo">DIMENS<span id="fh5co-10">IO</span>N</h1>
-                        <p>INFINITE POSSIBLITIES FOR <br> YOUR SMART DEVICES</p>
+                        <p>INFINITE POSSIBLITIES FOR
+                            <br> YOUR SMART DEVICES</p>
                     </figure>
                     <figure class="fh5co-figure animate-box">
                         <figure class="fh5co-figure animate-box">
                             <p class="CTA">
-                                <a href="#" class="btn btn-primary"><i class="icon-mail"></i> Get Beta Invite</a>
+                                <a href="#get-started" class="btn btn-primary"><i class="icon-mail"></i> Get Beta Invite</a>
                             </p>
                         </figure>
                 </div>
@@ -171,23 +175,37 @@
                     </div>
                 </div>
                 <div class="get-started">
-                    <form class="form-inline">
-                        <div class="col-md-4 col-sm-4">
+                    <!-- Begin MailChimp Signup Form -->
+                    <form action="https://dimension10.us14.list-manage.com/subscribe/post?u=0fac44fd73d368fdd15c177c7&amp;id=b1ed6dc20b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate class="form-inline">
+                        <!--                         <div class="col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label for="name" class="sr-only">Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
+                        </div> -->
+                        <div class="col-md-6 col-md-offset-2 col-sm-6">
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input name="b_0fac44fd73d368fdd15c177c7_b1ed6dc20b" tabindex="-1" value="" type="email" class="form-control" id="email" placeholder="Email">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <button type="submit" class="btn btn-default btn-block">Subscribe</button>
+                        <div class="col-md-3 col-sm-6">
+                            <button value="Subscribe" name="subscribe" type="submit" class="btn btn-default btn-block">Subscribe</button>
                         </div>
                     </form>
+                    <!--             <form action="https://dimension10.us14.list-manage.com/subscribe/post?u=0fac44fd73d368fdd15c177c7&amp;id=b1ed6dc20b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <label for="mce-EMAIL">Sign up for our Beta Release</label>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_0fac44fd73d368fdd15c177c7_b1ed6dc20b" tabindex="-1" value="">
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                </div>
+                            </div>
+                        </form> -->
+                    <!--End mc_embed_signup-->
                 </div>
             </div>
         </div>
@@ -220,6 +238,22 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>

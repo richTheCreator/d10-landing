@@ -25,24 +25,6 @@
 		}
 	};
 
-
-	var testimonialCarousel = function(){
-		
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 0,
-			responsiveClass: true,
-			nav: false,
-			dots: true,
-			autoHeight: true,
-			smartSpeed: 800,
-			autoHeight: true
-		});
-
-	};
-
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
@@ -83,7 +65,6 @@
 
 	
 	$(function(){
-		testimonialCarousel();
 		contentWayPoint();
 	});
 

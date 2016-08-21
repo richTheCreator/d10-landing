@@ -45,8 +45,8 @@ a:focus {
 }
 
 p {
-    font-weight: 100;
-    font-size: 1.7em;
+    font-weight: 300;
+    font-size: 1.5em;
     margin-bottom: 30px;
     color: white;
     line-height: 32px;
@@ -66,6 +66,10 @@ figure {
     margin: 0 0 30px 0;
 }
 
+.circ-icon img {
+    width: 15em;
+}
+
 ::-webkit-selection {
     color: #fff;
     background: #118DF0;
@@ -83,9 +87,14 @@ figure {
 
 #fh5co-header {
     background-image: url('../images/HeaderJumbo.jpg');
-    /*  height: 800px;
-*/
+    background-position: center;
     background-size: cover;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
 }
 
 .body-wrapper {
@@ -150,13 +159,6 @@ figure {
     border-bottom: none !important;
 }
 
-
-/*#fh5co-header {
-  font-size: 24px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.95);
-}*/
-
 #fh5co-header .intro a {
     color: rgba(255, 255, 255, 0.95);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -201,39 +203,6 @@ figure {
     }
 }
 
-
-/*#fh5co-header .fh5co-intro-img img {
-  max-width: 380px;
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
-}
-@media screen and (max-width: 768px) {
-  #fh5co-header .fh5co-intro-img .img-1 {
-    max-width: 380px;
-  }
-}
-@media screen and (max-width: 480px) {
-  #fh5co-header .fh5co-intro-img .img-1 {
-    max-width: 100%;
-  }
-}
-#fh5co-header .fh5co-intro-img .img-2 {
-  position: absolute;
-  top: 5em;
-  right: -1em;
-}
-@media screen and (max-width: 992px) {
-  #fh5co-header .fh5co-intro-img .img-2 {
-    right: -10em;
-  }
-}
-@media screen and (max-width: 768px) {
-  #fh5co-header .fh5co-intro-img img {
-    max-width: 100%;
-  }
-}*/
-
 #main {
     margin-top: 7em;
     clear: both;
@@ -245,6 +214,16 @@ figure {
     }
     #main {
         margin-top: 8em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #fh5co-logo {
+        font-size: 2.5em;
+        letter-spacing: 5px;
+    }
+    p {
+        font-size: 1.4em;
     }
 }
 
@@ -365,7 +344,6 @@ figure {
     font-size: 2.3em;
     text-align: center;
 }
-
 
 @media screen and (max-width: 992px) {
     .fh5co-feature .fh5co-figure {
@@ -743,10 +721,12 @@ figure {
 .D10-bold {
     font-weight: 500;
 }
+
 .D10-divider {
     width: 50px;
     border-width: 2px;
     border-color: #FF9702;
+    box-shadow: 0px 2px 10px 0px rgba(254, 150, 1, .4);
 }
 
 .circ-icon {
